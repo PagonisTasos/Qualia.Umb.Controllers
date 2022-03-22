@@ -10,8 +10,7 @@ using Umbraco.Cms.Web.Common;
 
 namespace Qualia.Umb.Controllers
 {
-    [VariationContext_ActionFilter]
-    public abstract partial class BaseApiController : Umbraco.Cms.Web.Common.Controllers.UmbracoApiController, IVariationContextController
+    public abstract partial class BaseApiController : Umbraco.Cms.Web.Common.Controllers.UmbracoApiController
     {
         public IVariationContextAccessor VariationContextAccessor { get; }
         public UmbracoHelper UmbracoHelper { get; }

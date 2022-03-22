@@ -6,8 +6,7 @@ using Umbraco.Cms.Web.Common;
 namespace Qualia.Umb.Controllers
 {
 
-	[VariationContext_ActionFilter]
-    public abstract partial class BaseSurfaceController : Umbraco.Cms.Web.Website.Controllers.SurfaceController, IVariationContextController
+    public abstract partial class BaseSurfaceController : Umbraco.Cms.Web.Website.Controllers.SurfaceController
 	{
 		public IVariationContextAccessor VariationContextAccessor { get; }
 		public ILocalizationService LocalizationService { get; }
